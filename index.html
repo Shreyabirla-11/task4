@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlavorFolio - Your Recipe Keeper</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-utensils"></i>
+            <span>FlavorFolio</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#recipes">My Recipes</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#share">Share</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Organize & Share Your <span class="highlight">Favorite Recipes</span></h1>
+            <p>Create your personal digital cookbook with beautiful photos and easy categorization</p>
+            <div class="cta-buttons">
+                <button class="btn-primary">Get Started</button>
+                <button class="btn-secondary">View Demo</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Delicious food">
+        </div>
+    </section>
+
+    <section id="recipes" class="recipe-section">
+        <h2>My Recipe Collection</h2>
+        <div class="search-bar">
+            <input type="text" placeholder="Search recipes...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="recipe-grid">
+            <!-- Recipe cards will be added here by JavaScript -->
+        </div>
+        <button class="btn-add">
+            <i class="fas fa-plus"></i> Add New Recipe
+        </button>
+    </section>
+
+    <section id="categories" class="categories-section">
+        <h2>Recipe Categories</h2>
+        <div class="category-tags">
+            <span class="tag breakfast">Breakfast</span>
+            <span class="tag lunch">Lunch</span>
+            <span class="tag dinner">Dinner</span>
+            <span class="tag dessert">Dessert</span>
+            <span class="tag vegan">Vegan</span>
+            <span class="tag gluten-free">Gluten-Free</span>
+            <span class="tag quick">Quick Meals</span>
+            <span class="tag family">Family Favorites</span>
+        </div>
+        <div class="category-display">
+            <div class="category-card" style="background-color: #FF9AA2;">
+                <i class="fas fa-egg"></i>
+                <h3>Breakfast</h3>
+                <p>12 recipes</p>
+            </div>
+            <div class="category-card" style="background-color: #FFB7B2;">
+                <i class="fas fa-bread-slice"></i>
+                <h3>Lunch</h3>
+                <p>18 recipes</p>
+            </div>
+            <div class="category-card" style="background-color: #FFDAC1;">
+                <i class="fas fa-drumstick-bite"></i>
+                <h3>Dinner</h3>
+                <p>24 recipes</p>
+            </div>
+            <div class="category-card" style="background-color: #E2F0CB;">
+                <i class="fas fa-ice-cream"></i>
+                <h3>Dessert</h3>
+                <p>15 recipes</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="share" class="share-section">
+        <div class="share-content">
+            <h2>Share Your Culinary Creations</h2>
+            <p>Easily share your recipes with friends, family, or the whole FlavorFolio community!</p>
+            <div class="social-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fas fa-envelope"></i>
+                <i class="fas fa-link"></i>
+            </div>
+        </div>
+        <div class="share-image">
+            <img src="https://images.unsplash.com/photo-1556910638-90b6a9a149b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Sharing food">
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>FlavorFolio</h3>
+                <p>Your personal digital cookbook for organizing and sharing your favorite recipes.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#recipes">Recipes</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#share">Share</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> hello@flavorfolio.com</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 FlavorFolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
